@@ -127,7 +127,7 @@ nav {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     background: var(--gradient);
@@ -135,6 +135,7 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: slideUp 0.8s ease-out;
+    white-space: nowrap;
 }
 
 @keyframes slideUp {
@@ -566,7 +567,8 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .hero h1 { font-size: 2.5rem; }
+    .hero h1 { font-size: 1.8rem; white-space: normal; }
+    .tagline { font-size: 1rem; }
     .nav-links { gap: 1rem; font-size: 0.85rem; }
     .project-grid { grid-template-columns: 1fr; }
     section h2 { font-size: 2rem; }
